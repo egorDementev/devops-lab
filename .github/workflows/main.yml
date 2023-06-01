@@ -93,4 +93,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: user/app:latest
+          tags: egorsurikat/devops1:latest
