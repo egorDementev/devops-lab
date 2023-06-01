@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4e1b59-6328-4f56-9a97-80b4406eee15" name="Changes" comment="add job to send tg message" />
+    <list default="true" id="bf4e1b59-6328-4f56-9a97-80b4406eee15" name="Changes" comment="add downloader of artefact" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685623951537</updated>
-      <workItem from="1685623952674" duration="6664000" />
+      <workItem from="1685623952674" duration="7030000" />
     </task>
     <task id="LOCAL-00001" summary="creation project">
       <created>1685624110679</created>
@@ -157,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685646813122</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add job to send tg message">
+      <created>1685646871703</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1685646871703</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add downloader of artefact">
+      <created>1685647181268</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685647181268</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +196,7 @@
     <MESSAGE value="first try to make pipeline" />
     <MESSAGE value="add maven" />
     <MESSAGE value="add job to send tg message" />
-    <option name="LAST_COMMIT_MESSAGE" value="add job to send tg message" />
+    <MESSAGE value="add downloader of artefact" />
+    <option name="LAST_COMMIT_MESSAGE" value="add downloader of artefact" />
   </component>
 </project>

@@ -9,7 +9,7 @@ jobs:
   built_my_project:
     strategy:
       matrix:
-        o_system: [windows-latest, macos-latest, ubuntu-latest]
+        o_system: [macos-latest, ubuntu-latest]
     runs-on: ${{matrix.o_system}}
 
     steps:
@@ -37,6 +37,7 @@ jobs:
 
   download_artefact:
     needs: built_my_project
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
