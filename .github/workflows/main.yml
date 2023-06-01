@@ -47,7 +47,7 @@ jobs:
           path: src/artefacts
 
       - name: Display structure of downloaded files
-        run: ls -R
+        run: ls -l
         working-directory: src/artefacts
 
   build:
@@ -60,7 +60,7 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          document: src/artefacts/DevopsLab1-1.0-SNAPSHOT.jar
+          document: src/artefacts/*.jar
           message: |
             ${{ github.actor }} created commit:
             Commit message: ${{ github.event.commits[0].message }}
