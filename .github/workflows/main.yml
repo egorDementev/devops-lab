@@ -35,7 +35,7 @@ jobs:
       - name: print_if_artefact_success
         run: echo "Artefact was upload successfully!!"
 
-  download_artefact:
+  download_and_send_artefact:
     needs: built_my_project
     runs-on: ubuntu-latest
     steps:
@@ -50,11 +50,6 @@ jobs:
         run: ls -l
         working-directory: art
 
-  build:
-    name: Build_telegram
-    needs: download_artefact
-    runs-on: ubuntu-latest
-    steps:
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
         with:

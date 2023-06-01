@@ -64,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685623951537</updated>
-      <workItem from="1685623952674" duration="7766000" />
+      <workItem from="1685623952674" duration="8121000" />
     </task>
     <task id="LOCAL-00001" summary="creation project">
       <created>1685624110679</created>
@@ -199,7 +199,28 @@
       <option name="project" value="LOCAL" />
       <updated>1685647916865</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add downloader of artefact">
+      <created>1685648011108</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1685648011108</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add downloader of artefact">
+      <created>1685648128675</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685648128675</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add downloader of artefact">
+      <created>1685648274259</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685648274259</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
