@@ -35,9 +35,23 @@ jobs:
       - name: print_if_artefact_success
         run: echo "Artefact was upload successfully!!"
 
+  download_artefact:
+    needs: built_my_project
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: build_artefact
+          path: src/artefacts
+
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: src/artefacts
+
   build:
     name: Build_telegram
-    needs: built_my_project
+    needs: download_artefact
     runs-on: ubuntu-latest
     steps:
       - name: send telegram message on push
@@ -52,4 +66,4 @@ jobs:
             Repository: ${{ github.repository }}
 
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
-          document: build_artefact
+          document: src/artefacts/build_artefact
