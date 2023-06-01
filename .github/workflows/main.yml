@@ -26,11 +26,11 @@ jobs:
       - name: print_if_build_success
         run: echo "Build on ${{matrix.o_system}} finished successfully!!"
 
-      - run: mkdir src/artefacts && cp target/*.jar src/artefacts
+      - run: mkdir artefacts && cp target/*.jar artefacts
       - uses: actions/upload-artifact@v3
         with:
           name: build_artefact
-          path: src/artefacts
+          path: artefacts
 
       - name: print_if_artefact_success
         run: echo "Artefact was upload successfully!!"
@@ -44,11 +44,11 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: build_artefact
-          path: src/artefacts
+          path: artefacts
 
       - name: Display structure of downloaded files
         run: ls -l
-        working-directory: src/artefacts
+        working-directory: artefacts
 
   build:
     name: Build_telegram
@@ -60,7 +60,7 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          document: src/artefacts/*.jar
+          document: artefacts/*.jar
 #          message: |
 #            ${{ github.actor }} created commit:
 #            Commit message: ${{ github.event.commits[0].message }}
