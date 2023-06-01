@@ -19,11 +19,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots package
+
       - name: print_if_build_success
         run: "Build on ${{matrix.o_system}} finished successfully!!"
 
+      - run: mvn --batch-mode --update-snapshots verify
       - run: mkdir src/artefacts && cp target/*.jar src/artefacts
       - uses: actions/upload-artifact@v3
         with:
