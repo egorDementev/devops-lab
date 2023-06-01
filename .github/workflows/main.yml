@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
 
       - name: print_if_build_success
-        run: "Build on ${{matrix.o_system}} finished successfully!!"
+        run: echo "Build on ${{matrix.o_system}} finished successfully!!"
 
       - run: mvn --batch-mode --update-snapshots verify
       - run: mkdir src/artefacts && cp target/*.jar src/artefacts
@@ -31,4 +31,4 @@ jobs:
           path: src/artefacts
 
       - name: print_if_artefact_success
-        run: "Artefact was upload successfully!!"
+        run: echo "Artefact was upload successfully!!"
