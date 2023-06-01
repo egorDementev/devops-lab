@@ -93,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685623951537</updated>
-      <workItem from="1685623952674" duration="13269000" />
+      <workItem from="1685623952674" duration="13584000" />
     </task>
     <task id="LOCAL-00001" summary="creation project">
       <created>1685624110679</created>
@@ -291,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685653991369</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update Dockerfile">
+      <created>1685654311336</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1685654311336</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
