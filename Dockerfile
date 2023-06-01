@@ -1,4 +1,10 @@
 FROM openjdk:17
-COPY ./out/production/DevopsLab1/ /tmp/
-WORKDIR /tmp
-ENTRYPOINT ["java", "Main", "Complex", "ComplexIO", "Matrix", "MatrixIO"]
+WORKDIR /app
+
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
+RUN ./mvnw dependency:resolve
+
+COPY src ./src
+
+CMD ["./mvnw", "spring-boot:run"]
