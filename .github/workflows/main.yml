@@ -37,6 +37,7 @@ jobs:
 
   build:
     name: Build_telegram
+    needs: built_my_project
     runs-on: ubuntu-latest
     steps:
       - name: send telegram message on push

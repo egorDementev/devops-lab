@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4e1b59-6328-4f56-9a97-80b4406eee15" name="Changes" comment="add maven">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DevopsLab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DevopsLab1.iml" afterDir="false" />
-    </list>
+    <list default="true" id="bf4e1b59-6328-4f56-9a97-80b4406eee15" name="Changes" comment="add job to send tg message" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685623951537</updated>
-      <workItem from="1685623952674" duration="5815000" />
+      <workItem from="1685623952674" duration="5876000" />
     </task>
     <task id="LOCAL-00001" summary="creation project">
       <created>1685624110679</created>
@@ -143,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685643446431</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add job to send tg message">
+      <created>1685646018434</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685646018434</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +167,7 @@
     <MESSAGE value="main files" />
     <MESSAGE value="first try to make pipeline" />
     <MESSAGE value="add maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="add maven" />
+    <MESSAGE value="add job to send tg message" />
+    <option name="LAST_COMMIT_MESSAGE" value="add job to send tg message" />
   </component>
 </project>
