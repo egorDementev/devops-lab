@@ -1,10 +1,3 @@
 FROM openjdk:17
-WORKDIR /app
-
-COPY .mvn/ .mvn
-COPY pom.xml ./
-RUN ./mvnw dependency:resolve
-
-COPY src ./src
-
-CMD ["./mvnw", "spring-boot:run"]
+COPY target/DevopsLab1-1.0-SNAPSHOT.jar app.jar
+ENTRYPOINT java -jar app.jar
