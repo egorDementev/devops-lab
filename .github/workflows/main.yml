@@ -99,11 +99,6 @@ jobs:
     needs: docker
     runs-on: self-hosted
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Set up Docker
-        uses: docker/setup-docker@v2
-
       - name: docker_pull
         run: docker pull egorsurikat/devops1:latest
       - name: docker_run
