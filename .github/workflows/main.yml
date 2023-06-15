@@ -12,7 +12,7 @@ jobs:
   built_my_project:
     strategy:
       matrix:
-        o_system: [macos-latest, ubuntu-latest]
+        o_system: [macos-latest, ubuntu-latest, self-hosted]
     runs-on: ${{matrix.o_system}}
 
     steps:
