@@ -20,7 +20,7 @@
         <configuration>
             <archive>
                 <manifest>
-                    <mainClass>Main.java</mainClass>
+                    <mainClass>Main</mainClass>
                 </manifest>
             </archive>
         </configuration>
