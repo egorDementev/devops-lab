@@ -12,7 +12,7 @@ jobs:
   built_my_project:
     strategy:
       matrix:
-        o_system: [macos-latest, ubuntu-latest, self-hosted]
+        o_system: [macos-latest, ubuntu-latest]
     runs-on: ${{matrix.o_system}}
 
     steps:
@@ -94,3 +94,12 @@ jobs:
         with:
           push: true
           tags: egorsurikat/devops1:latest
+
+  my_server:
+    needs: docker
+    runs-on: self-hosted
+    steps:
+      - name: docker_pull
+        run: docker pull egorsurikat/devops1:latest
+      - name: docker_run
+        run: docker run -it egorsurikat/devops1:latest
