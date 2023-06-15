@@ -102,4 +102,4 @@ jobs:
       - name: docker_pull
         run: docker pull egorsurikat/devops1:latest
       - name: docker_run
-        run: docker run egorsurikat/devops1:latest
+        run: docker run -d egorsurikat/devops1:latest
